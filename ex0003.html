@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgb(104, 104, 152);
+            color: white;
+            font: normal 20pt arial;
+        }
+        h1{
+            color: rgba(231, 188, 18, 0.91);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert (`A soma dos números ${n1} e ${n2} é igual a ${s}`)
+        //window.alert('A soma dos números é ' + s.toString())  // ou String(s)
+        var n3 = (1545.3)
+        window.alert(n3.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))//tranformar numero em moeda
+    </script>
+</body>
+</html>
